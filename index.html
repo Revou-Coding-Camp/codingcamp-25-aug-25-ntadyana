@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SM Entertainment</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo SM Ent">
+      </div>
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Our Profile</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#message">Message Us</a></li>
+      </ul>
+      <div class="burger" id="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Home -->
+  <section id="home">
+    <h1 id="welcome-text">Hi, Welcome To SM (Suka Mengjamet)</h1>
+<p>Strobo Nyala, Beat Koplo Mendunia! 💃🏻🔊🎶</p>
+<img src="images/banner.png" alt="Banner SM Ent" class="banner">
+  </section>
+  
+<!-- Our Profile -->
+<section id="profile">
+  <h2>Our Profile</h2>
+  <p>SM Ent hadir bukan hanya sebagai agensi.
+    Kami adalah rumah bagi mimpi-mimpi jamet,
+    tempat musik jedag-jedug bersatu.</p>
+
+  <!-- Visi & Misi -->
+  <div class="visi-misi">
+    <div class="visi">
+      <h3>Visi</h3>
+      <p>
+        Menjadi agensi nomor satu dalam mencetak idol-idol <b>mengjamet</b> 
+        yang tak hanya <i>go international</i>, tapi juga <i>go</i> ke tongkrongan, warnet, dan warkop terdekat.
+      </p>
+    </div>
+    
+    <div class="misi">
+      <h3>Misi</h3>
+      <ul>
+        <li>Melahirkan boygroup & girlgroup dengan style jamet futuristik: sandal swallow + lampu neon + jaket bola KW.</li>
+        <li>Mendistribusikan musik yang <b>easy listening</b>, cocok buat backsound story WA dan video TikTok efek jedag-jedug.</li>
+        <li>Menjamin semua trainee bisa nge-DJ pake toa masjid dan dance pakai motor beat.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Ketua & Wakil Section -->
+  <div class="leaders">
+    <h3>Struktur Pimpinan</h3>
+    <div class="leader-cards">
+      <div class="card">
+        <img src="images/carmen.png" alt="Ketua Jamet">
+        <h4>Carmen</h4>
+        <p>Ketua Jamet</p>
+      </div>
+      <div class="card">
+        <img src="images/karina.png" alt="Wakil Ketua Umum Jamet">
+        <h4>Karina</h4>
+        <p>Wakil Ketua Umum Jamet</p>
+      </div>
+      <div class="card">
+        <img src="images/haechan.png" alt="Wakil Ketua Penghibur Jamet">
+        <h4>Haechan</h4>
+        <p>Wakil Ketua Penghibur Jamet</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+  <hr class="divider">
+  
+  <section id="portfolio">
+    
+    
+    <!-- Portfolio -->
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio-list">
+        
+        <div class="portfolio-item">
+          <h3>🏆 Prestasi</h3>
+          <ul>
+            <li>“Best Futsal Fansign 2023”</li>
+            <li>“Top 10 Soundtrack Story WA 2024”</li>
+            <li>“Festival Dangdut Koplo EDM Internasional – Juara Harapan”</li>
+          </ul>
+        </div>
+        
+        <div class="portfolio-item">
+          <h3>🤝 Kolaborasi</h3>
+          <ul>
+            <li>Featuring <b>DJ Toa Masjid</b></li>
+            <li>OST resmi <b>Balapan Liar Sabtu Malam</b></li>
+            <li>Special stage di <b>Pasar Malam Annual Concert</b></li>
+          </ul>
+        </div>
+        
+        <div class="portfolio-item">
+          <h3>🎬 Music Video Project</h3>
+          <ul>
+            <li><i>Cinta di Rel Kereta</i></li>
+            <li><i>Jangan Nge-ghosting di Angkringan</i></li>
+            <li><i>Sandal Swallow Love Story</i></li>
+          </ul>
+        </div>
+        
+        <div class="portfolio-item">
+          <h3>🎶 Konser & Event</h3>
+          <ul>
+            <li>Konser akbar di <b>Lapangan Futsal RW 05</b></li>
+            <li>Mini fanmeeting di <b>Warnet 24 Jam</b></li>
+            <li>Showcase spesial: <b>Jamet World Tour (Cuma Keliling Kabupaten)</b></li>
+          </ul>
+        </div>
+        
+      </div>
+    </section>
+    
+    
+    <!-- Message Us -->
+    <section id="message">
+      <h2>Message Us</h2>
+      <form id="contactForm">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="contoh@email.com" required>
+        
+        <label for="phone">Nomor HP:</label>
+        <input type="tel" id="phone" placeholder="08xxxxxxxxxx" required pattern="[0-9]{10,13}">
+        
+        <label for="messageText">Pesan:</label>
+        <textarea id="messageText" placeholder="Tulis pesanmu..." required></textarea>
+        
+        <button type="submit">Submit</button>
+      </form>
+      
+      <!-- Hasil output pesan -->
+      <div id="output"></div>
+    </section>
+    
+    <!-- Script -->
+    <script src="js/script.js"></script>
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 SM (Suka Mengjamet). All Rights Reserved.</p>
+      <p>Created by <b>Tim Jamet Kreatif</b> 🚀</p>
+    </footer>
+</body>
+
+</html>
+</body>
+
+</html>
